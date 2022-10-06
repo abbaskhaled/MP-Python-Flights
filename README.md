@@ -10,6 +10,64 @@ In this task, you'll be creating the Passengers system for an airline. This airl
 
 Here is an example of what the output would look like:
 
+```
+Welcome to CODED Airline.
+Options:
+1. Show persons
+2. Show captains
+3. Add person
+4. Add captain
+Choose a number:1
+Name: Laila, Age: 23, Passport: 854534, Bags: 2, Destination: Japan
+Name: Shereen, Age: 25, Passport: 9876542, Bags: 3, Destination: Germany
+
+------------
+
+Welcome to CODED Airline.
+Options:
+1. Show persons
+2. Show captains
+3. Add person
+4. Add captain
+Choose a number:2
+Name: Mohammad, Age: 25, Passport: 54645, Experience Years: 4, Salary: 5555
+Name: Sara, Age: 29, Passport: 84395, Experience Years: 9, Salary: 7000
+
+-----------
+
+Welcome to CODED Airline.
+Options:
+1. Show persons
+2. Show captains
+3. Add person
+4. Add captain
+Choose a number:3
+Name: Laila
+Age: 33
+Passport Numbers: 4354
+Num of Bags: 3
+Destination: Kuwait
+Name: Laila, Age: 33, Passport: 4354, Bags: 3, Destination: Kuwait
+
+
+--------
+
+Welcome to CODED Airline.
+Options:
+1. Show persons
+2. Show captains
+3. Add person
+4. Add captain
+Choose a number:4
+Name: Abdallah
+Age: 44
+Passport Numbers: 976665
+Experience Years: 3
+Salary: 3333
+Name: Abdallah, Age: 44, Passport: 976665, Experience Years: 3, Salary: 3333
+
+```
+
 ## Steps:
 
 1.  In this task you need to create three classes:
