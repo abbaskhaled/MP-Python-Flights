@@ -1,114 +1,67 @@
 # Fork & Clone
 
-Fork and clone [this repository](https://github.com/JoinCODED/hr-pro) in your `python` directory.
+Fork and clone [this repository](https://github.com/JoinCODED/MP-Python-Flights) in your `python` directory.
 
 ---
 
-# Task 
+# Task
 
-In this task, you'll be creating the HR system for a company. This company has two types of employees: non-managerial employees and managers.
+In this task, you'll be creating the Passengers system for an airline. This airline has two types of people: passengers and captains.
 
-The following example assumes the current year is 2019.
-
-```
-Welcome to HR Pro 2019
-Options:
-	1. Show Employees
-	2. Show Managers
-	3. Add An Employee
-	4. Add A Manager
-	5. Exit
-
-What would you like to do? 3
------------------
-Name: shosho
-Age: 24
-Salary: 666
-Employement year: 2018
-Employee added succesfully
-
-Options:
-	1. Show Employees
-	2. Show Managers
-	3. Add An Employee
-	4. Add A Manager
-	5. Exit
-
-What would you like to do? 1
------------------
-Employees
-
-Name: shosho, Age: 24, Salary: 666, Working Years: 1
------------------
-
-Options:
-	1. Show Employees
-	2. Show Managers
-	3. Add An Employee
-	4. Add A Manager
-	5. Exit
-
-What would you like to do? 4
------------------
-Name: sammy
-Age: 52
-Salary: 4600
-Employement Year: 1900
-Bonus Percentage: .3
-Manager added succesfully
-
-Options:
-	1. Show Employees
-	2. Show Managers
-	3. Add An Employee
-	4. Add A Manager
-	5. Exit
-
-What would you like to do? 2
------------------
-Managers
-
-Name: sammy, Age: 52, Salary: 4600, Working Years: 119, Bonus: 1380.000000
------------------
-
-Options:
-	1. Show Employees
-	2. Show Managers
-	3. Add An Employee
-	4. Add A Manager
-	5. Exit
-
-What would you like to do? 5
-```
+Here is an example of what the output would look like:
 
 ## Steps:
-1. In this task you need to create two classes:
-    - `Employee`:
+
+1.  In this task you need to create three classes:
+
+    a. `Person` class:
+
         - `name`
         - `age`
-        - `salary`
-        - `employment_year`
-        - `get_working_years()`
-            - `today` - `employment_year`
+        - `passport_number`
 
-    - `Manager`:
+    b. `Passenger` class:
+
+        - Where the `Passenger` class inherits from the `Person` class.
         - `name`
         - `age`
-        - `salary`
-        - `employment_year`
-        - `bonus_percentage`
-        - `get_working_years()`
-            - `today` - `employement_date`
-        - `get_bonus()`
-            - `bonus_percentage` * `salary`
-        - Where the `Manager` class inherits from the `Employee` class. 
-2. Define a list of `Employee` objects for non-managerial employees, and a list of `Manager` objects for managers.
-3. Print the options to the HR employee (the user).
-4. If `1` was chosen, print the employees information (the employees list).
-5. If `2` was chosen, print the managers information (the managers list).
-6. If `3` was chosen, allow the HR employee to add a non-managerial employee to the system (the employees list).
-7. If `4` was chosen, allow the HR employee to add a manager to the system (the managers list).
-8. If `5` was chosen, stop the program.
-9. Push your code.
+        - `passport_number`
+        - `number_of_bags`
+        - `destination`
+        - `get_bag_weight()`:
+        	- Every bag's weight is 23KG
+        	- Return the total weight for this passenger (number of bags \* 23)
+        - Add an `__str` method that prints the `name`, `age`, `passport_number`, `number_of_bags` and `destination`.
 
-Hint: The `__str__` method can help you with printing the employees information. You can read about it [here](https://www.journaldev.com/22460/python-str-repr-functions#python--str--and--repr--example)
+    c. `Captain`:
+
+        - Where the `Captain` class inherits from the `Person` class.
+        - `name`
+        - `age`
+        - `passport_number`
+        - `experience_years`
+        - `salary`
+        - `get_bonus()`:
+        	- Every year of experience gives 1% bonus, example: if captain has five years of experience, his bonus will be 5% (`5/100`) multiplied by his salary.
+        	- Return the bonus ((experience years /100) \* salary)
+        - Add an `__str` method that prints the `name`, `age`, `passport_number`, `experience_years` and `salary`.
+
+2.  Define a list of two `Passenger` objects.
+3.  Create a list of two `Captain` objects.
+4.  Print the following options to the airline user.
+
+    ```shell
+    Welcome to CODED Airline.
+    Options:
+    	1. Show persons
+    	2. Show captains
+    	3. Add person
+    	4. Add captain
+    Choose a number:
+    ```
+
+5.  If `1` was chosen, print the passengeres information (the passengeres list).
+6.  If `2` was chosen, print the captains information (the captains list).
+7.  If `3` was chosen, allow the user to create a passenger and then add it to the system (the passengers list).
+8.  If `4` was chosen, allow the user to create a captain and then add it to the system (the captains list).
+9.  Push your code.
