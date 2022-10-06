@@ -48,7 +48,7 @@ Here is an example of what the output would look like:
 
 2.  Define a list of two `Passenger` objects.
 3.  Create a list of two `Captain` objects.
-4.  Print the following options to the airline user.
+4.  Print the following options to the airline user. It doesn't need to be a list, just regular prints.
 
     ```shell
     Welcome to CODED Airline.
